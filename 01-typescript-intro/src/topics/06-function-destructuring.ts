@@ -1,6 +1,6 @@
 
 
-interface Product {
+export interface Product {
     description: string;
     price: number;
 }
@@ -31,6 +31,3 @@ const [ total, isv ] = calculateISV( shoppingCart );
 console.log('Total: ', total);
 console.log('ISV: ', isv);
 
-
-
-export {};
