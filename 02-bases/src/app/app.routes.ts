@@ -11,6 +11,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/hero/hero').then(h => h.Hero)
   },
   {
+    path: 'dragonball',
+    loadComponent: () => import('./pages/dragonball/dragonball').then(d => d.Dragonball)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
