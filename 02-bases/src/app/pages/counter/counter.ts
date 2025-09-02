@@ -1,7 +1,9 @@
 import { Component, signal } from '@angular/core';
+import { App } from "../../app";
 
 @Component({
   templateUrl: './counter.html',
+  imports: [App],
 })
 export class Counter {
   counter = 10;
