@@ -9,5 +9,9 @@ export const routes: Routes = [
   {
     path: 'hero',
     loadComponent: () => import('./pages/hero/hero').then(h => h.Hero)
+  },
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
